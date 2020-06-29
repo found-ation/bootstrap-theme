@@ -47,7 +47,7 @@ if (post_password_required())
             'title_reply_to' => esc_html__('Leave a Reply to %s', 'foundation'),
             'cancel_reply_link' => esc_html__('Cancel Reply', 'foundation'),
             'label_submit' => esc_html__('submit', 'foundation'),
-            'comment_field' => '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . esc_attr__('comment', 'foundation') . '"></textarea>',
+            'comment_field' => '<textarea style="width:100%" id="comment" name="comment" rows="8" aria-required="true" placeholder="Your comment' . esc_attr__('comment', 'foundation') . '"></textarea>',
             'must_log_in' => '<p class="must-log-in">' .
             sprintf(
                     wp_kses(__('You must be <a href="%s">logged in</a> to post a comment.', 'foundation'), array('a' => array('href' => array()))), esc_url(wp_login_url(apply_filters('the_permalink', get_permalink())))
